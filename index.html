@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cube Game</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="nav">
+        <ul class="list">
+          <li>
+            <a href="#jsModal" id="popup" class="jsModalTrigger">About</a>
+
+            <div id="jsModal" class="modal">
+              <div class="modal__overlay jsOverlay"></div>
+              <div class="modal__container">
+                <h1>Something about my first game</h1>
+                <p>
+                  This is my first game I made with the help of a video
+                  course</p>
+                  <p>With this game I tried to practice my acquired knowledge in js.</p>
+                  <p>
+                    The whole game is made in pure javascript with the help of DOM.
+                  </p>
+                  <p>Modal is taken from Code Pen website</p>
+
+                  <h2>Rules</h2>
+                 <p>The rules are simple.</p> 
+                 <p>The first player starts by rolling the dice.</p>
+                  <p>The player can roll the dice more than once and the score is added together</p>
+<p>If the score is sufficient, just click on hold the score and the other player can start playing</p>
+<p>The first player to reach a score of 250 wins.</p>
+<p>However, if one roll of the dice is 15, the player loses all points and plays the second player.</p>
+<p>Enjoy the game :)</p>
+
+
+                    
+                  <button class="modal__close jsModalClose">&#10005;</button>
+                </p>
+              </div>
+            </div>
+          </li>          
+        </ul>
+      </div>
+    </section>
+    <section class="game">
+      <div class="container">
+        <div class="totalScoreBar">
+          <div class="totalScore totalScore0 active">
+            <p id="Player0">Player 1</p>
+            <p id="playerScore0">10</p>
+          </div>
+          <div class="totalScore totalScore1">
+            <p id="Player1">Player 2</p>
+            <p id="playerScore1">10</p>
+          </div>
+        </div>
+        <div class="imageBar">
+          <img src="img/1.jpg" alt="" class="img-1" />
+          <img src="img/1.jpg" alt="" class="img-2" />
+          <img src="img/1.jpg" alt="" class="img-3" />
+        </div>
+        <div class="currentScoreBar">
+          <div class="currentScore currentScore0">
+            <p>Current Score</p>
+            <p id="playerCurrentScore0">20</p>
+          </div>
+          <div class="btnBar">
+            <div class="btn rollCube">Rool Dice</div>
+            <div class="btn holdScore">Hold Score</div>
+            <div class="btn newGame">New Game</div>
+          </div>
+          <div class="currentScore currentScore1">
+            <p>Current Score</p>
+            <p id="playerCurrentScore1">20</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
